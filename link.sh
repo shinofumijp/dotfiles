@@ -6,3 +6,4 @@ ln -sf ~/dotfiles/.vim/rc/dein_lazy.toml ~/.vim/rc/dein_lazy.toml
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.gemrc ~/.gemrc
