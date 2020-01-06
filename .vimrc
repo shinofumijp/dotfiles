@@ -143,28 +143,7 @@ au FileType go setlocal sw=4 ts=4 sts=4 noet
 au FileType go setlocal makeprg=go\ build\ ./... errorformat=%f:%l:\ %m
 au BufWritePre *.go Fmt
 
-"----------------------------------------------------
-" cursor moving in insert mode
-"----------------------------------------------------
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-b> <Left>
-inoremap <C-f> <Right>
-inoremap <C-l> <Right>
-inoremap <C-d> <Right><ESC>xi
-inoremap <C-o> <ESC>o
-
-"----------------------------------------------------
-" cursor moving in normal mode
-"----------------------------------------------------
-" search
-nnoremap n nzz
-nnoremap N Nzz
-nnoremap * *zz
-nnoremap # #zz
-nnoremap g* g*zz
-nnoremap g# g#zz
-
+source ~/.vimrc.keymap
 " Enter always means inserting line
 nnoremap <S-Enter> O<ESC>
 nnoremap <Enter> o<ESC>
