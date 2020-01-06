@@ -135,7 +135,7 @@ au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 autocmd FileType c hi Comment ctermfg=darkcyan
 autocmd FileType cpp hi Comment ctermfg=darkcyan
 autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
-autocmd FileType js set tabstop=4 tw=0 sw=4 expandtab
+autocmd FileType javascript set tabstop=2 tw=0 sw=2 expandtab
 
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
