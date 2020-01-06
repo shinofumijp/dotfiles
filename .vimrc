@@ -122,6 +122,9 @@ filetype plugin indent on
 highlight Search term=reverse ctermbg=DarkBlue ctermfg=NONE
 autocmd FileType ruby set tabstop=2 tw=0 sw=2 expandtab
 autocmd FileType eruby set tabstop=2 tw=0 sw=2 expandtab
+autocmd FileType python setl autoindent
+autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd FileType python setl tabstop=8 smarttab expandtab shiftwidth=4 softtabstop=4
 autocmd BufNewFile,BufRead app/*/*.rhtml set ft=mason fenc=utf-8
 autocmd BufNewFile,BufRead app/**/*.rb set ft=ruby fenc=utf-8
 autocmd BufNewFile,BufRead app/**/*.yml set ft=ruby fenc=utf-8
