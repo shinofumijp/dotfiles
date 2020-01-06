@@ -15,16 +15,24 @@
   # Open issues and pull requests created by me
   byme = !hub browse -- issues/created_by/$(git config user.name) && hub browse -- pulls/$(git config user.name)
 
- # Open issues and pull requests assigend to me
+  # Open issues and pull requests assigend to me
   tome = !hub browse -- issues/assigned/$(git config user.name) && hub browse -- pulls/assigned/$(git config user.name)
 
- # Show the pull request created from current branch
+  # Show the pull request created from current branch
   see  = !hub browse -- pull/$(git symbolic-ref --short HEAD)
 
- # Create a pull requests from current branch
-  pr = !hub browse -- compare/$(git symbolic-ref --short HEAD)‘?’expand=1'&‘body=%23%23%20%E7%9B%AE%E7%9A%84%0A%0A%23%23%20%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9
+  notifications = !hub browse /notifications
 
- notifications = !hub browse /notifications
+  ca = "commit --amend --no-edit"
+  p = "push"
+  c = "commit"
+  co = "checkout"
+  sw = "checkout"
+  a = "add"
+  see = browse
+  pull-request = "pull-request --browse"
+  pr = !hub pull-request
+  openpr = "!f() { hub browse -- `git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%pull/%'`; }; f"
 
 [web]
     browser = open
