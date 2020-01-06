@@ -17,6 +17,7 @@ autoload -Uz select-word-style
 select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
+zstyle ':completion:*' special-dirs true
 
 setopt no_beep
 
@@ -28,7 +29,7 @@ setopt mark_dirs
 export LS_COLORS='di=01;36'
 export LANG=ja_JP.UTF-8
 
-PROMPT="%m:%n%% "
+PROMPT="%% "
 RPROMPT="[%~]"
 SPROMPT="correct: %R -> %r ? "
 
@@ -62,10 +63,13 @@ PROMPT+='`lprompt-git-current-branch`'
 export GOPATH=~/dev/go
 export RBENV_ROOT=${HOME}/.rbenv
 export PATH=${HOME}/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/bin
-export PATH=${HOME}/.cabal/bin:${PATH}
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$PATH:/usr/local/flutter/bin
 
-# added by travis gem
-[ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
+export PYENV_ROOT=${HOME}/.pyenv
+export PATH=${HOME}/.pyenv/shims:$PATH
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
