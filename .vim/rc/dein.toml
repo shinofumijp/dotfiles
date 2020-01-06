@@ -1,8 +1,12 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
-
 [[plugins]]
 repo = 'tyru/caw.vim'
-
 [[plugins]]
 repo = 'tpope/vim-rails'
+[[plugins]]
+repo = 'mxw/vim-jsx'
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
