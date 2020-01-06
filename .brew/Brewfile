@@ -24,6 +24,7 @@ brew "htop"
 brew "hub"
 brew "jenv"
 brew "jq"
+brew "mas"
 brew "nkf"
 brew "nvm"
 brew "octave"
@@ -33,7 +34,6 @@ brew "ruby-build"
 brew "rbenv"
 brew "rbenv-gemset"
 brew "redis"
-brew "scala"
 brew "terraform"
 brew "the_silver_searcher"
 brew "tree"
@@ -46,8 +46,9 @@ brew "ethereum/ethereum/solidity"
 brew "heroku/brew/heroku"
 cask "docker"
 cask "google-cloud-sdk"
+cask "karabiner-elements"
 cask "sequel-pro"
 mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
 mas "LINE", id: 539883307
 mas "Skitch", id: 425955336
-mas "Slack", id: 803453959
