@@ -185,3 +185,4 @@ let g:quickrun_config = {
 "  set vimfiler as default explorer
 let g:vimfiler_as_default_explorer = 1
 nmap <C-v><C-f> :VimFiler -split -simple -winwidth=35 -no-quit<CR>
+language C
