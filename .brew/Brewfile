@@ -47,6 +47,7 @@ brew "heroku/brew/heroku"
 cask "docker"
 cask "google-cloud-sdk"
 cask "karabiner-elements"
+cask "kindle"
 cask "sequel-pro"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
