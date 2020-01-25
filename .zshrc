@@ -66,10 +66,6 @@ export PATH=${HOME}/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/b
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$PATH:/usr/local/flutter/bin
 
-export PYENV_ROOT=${HOME}/.pyenv
-export PATH=${HOME}/.pyenv/shims:$PATH
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export PATH=${HOME}/Library/Python/3.7/bin:$PATH
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
