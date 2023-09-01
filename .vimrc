@@ -118,6 +118,8 @@ set imdisable
 set iminsert=1
 set imsearch=1
 
+set clipboard+=unnamed
+
 filetype plugin indent on
 highlight Search term=reverse ctermbg=DarkBlue ctermfg=NONE
 autocmd FileType ruby set tabstop=2 tw=0 sw=2 expandtab
@@ -137,6 +139,10 @@ autocmd FileType cpp hi Comment ctermfg=darkcyan
 autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
 autocmd FileType javascript set tabstop=2 tw=0 sw=2 expandtab
 
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+
+autocmd FileType typescript set tabstop=2 tw=0 sw=2 expandtab
+
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
@@ -144,7 +150,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 au FileType go setlocal sw=4 ts=4 sts=4 noet
 au FileType go setlocal makeprg=go\ build\ ./... errorformat=%f:%l:\ %m
-au BufWritePre *.go Fmt
 
 source ~/.vimrc.keymap
 " Enter always means inserting line

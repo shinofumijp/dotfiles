@@ -9,4 +9,8 @@ repo = 'mxw/vim-jsx'
 [[plugins]]
 repo = 'tpope/vim-rhubarb'
 [[plugins]]
+repo = 'tomlion/vim-solidity'
+[[plugins]]
 repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'github/copilot.vim'

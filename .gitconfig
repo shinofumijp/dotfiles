@@ -1,6 +1,5 @@
 [user]
     name = shinofumijp
-    email = electric.spanish.shinofumi.335@gmail.com
 [color]
     ui = auto
 [push]
@@ -40,3 +39,7 @@
     cmd = open -a ‘Google Chrome.app’
 [github]
 	user = shinofumijp
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
